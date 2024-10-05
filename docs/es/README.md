@@ -84,7 +84,7 @@ La segunda forma de obtener fragmentos es en el módulo de crafting, cuando este
 
 <iframe width="560" height="450" style="margin: 20px 0%;" src="https://www.youtube.com/embed/l0vg3l_cJ-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<img src="./_media/crafting.jpg" alt="crafting" style="width: 100%;">
+<img src="../_media/crafting.jpg" alt="crafting" style="width: 100%;">
 
 
 <iframe width="560" height="450" style="margin: 20px 0%;" src="https://www.youtube.com/embed/AhD9VKwnyGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -123,6 +123,14 @@ Todo el ecosistema de Topacio contará con la siguiente distribución, regido po
 - 4% Tesorería.
 - 10% Bloqueado negociación exchanges max 3% por exchange.
 
+<script>
+    if(document.getElementById('tokenomic-chart')){
+      const tokenomicChart = new Chart(
+          document.getElementById('tokenomic-chart').getContext('2d'),// document.getElementById('tokenomic-chart'),
+          config
+        );
+    }
+</script>
 <p class="container-chart">
     <canvas id="tokenomic-chart" width="400" height="400"></canvas>
 </p>

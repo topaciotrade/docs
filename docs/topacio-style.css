@@ -34,7 +34,7 @@ article#main p{
 }
 
 section.cover.show{
-    background-image: url(/_media/topacio_banner_1.png)!important;
+    background-image: url(/_media/topacio_banner_1.jpg)!important;
     /*background-image: url(https://ipfs.io/ipfs/QmaGr2w5eZ4bLscXjVzoCZ9T2wJ63TDQB5PxeHEaCf78JR)!important;*/
     background-size: cover!important;
     background-position: center!important;
@@ -46,6 +46,16 @@ p.container-chart{
     padding: 0 15%!important;
 }
 
+.app-nav a {        
+    color: #fff;
+    background-color: #00073f;
+    padding: 0.5em;
+    border-radius: 7px;
+    transition: all .3s;
+}
+.app-nav a:hover{    
+    color: #00c0fc;
+}
 /*
 canvas#tokenomic-chart{
     width: 700px!important;

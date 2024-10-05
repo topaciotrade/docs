@@ -51,17 +51,74 @@ const data = {
     hoverOffset: 4
   }]
 };
+
+const dataEn = {
+  labels: [
+    "10% Team - Locked for 18 months",
+    "5% Topacio Ecosystem Scalability Platform",
+    "30% Staking Module Locked",
+    "12% Farming",
+    "3% Seed Round Locked (12 months)",
+    "5% Private Sale Locked",
+    "5% Public Sale QuickSwap",
+    "1% AirDrop Funded by Partners",
+    "5% Private Investment Partners (Locked for 12 months)",
+    "5% Marketing",
+    "5% Rewards Platforms and Events Distributed over 18 months",
+    "4% Treasury",
+    "10% Locked Exchange Negotiation max 3% per exchange"
+  ],
+  datasets: [{
+    label: "Tokenomic Distribution",
+    data: [10, 5, 30, 12, 3, 5, 5, 1, 5, 5, 5, 4, 10],
+    backgroundColor: [
+      "#264653",
+      "#2a9d8f",
+      "#e9c46a",
+      "#f4a261",
+      "#606c38",
+      "#8338ec",
+      "#3a86ff",
+      "#22333b",
+      "#00f5d4",
+      "#007f5f",
+      "#8ac926",
+      "#c9184a",
+      "#b7e4c7"
+    ],
+    hoverOffset: 4
+  }]
+};
+
+
   const config = {
     type: 'doughnut',
     data: data,
+    options: {}
+  };
+  
+  const configEN = {
+    type: 'doughnut',
+    data: dataEn,
     options: {}
   };
 
    //var ctx = document.getElementById('tokenomic-chart').getContext('2d');
 
    function iniChartTokenomic(){     
-       const tokenomicChart = new Chart(
-        document.getElementById('tokenomic-chart').getContext('2d'),// document.getElementById('tokenomic-chart'),
-        config
-      );
+      /* 
+    if(document.getElementById('tokenomic-chart')){
+      const tokenomicChart = new Chart(
+          document.getElementById('tokenomic-chart').getContext('2d'),// document.getElementById('tokenomic-chart'),
+          config
+        );
+    }
+
+      if(document.getElementById('tokenomic-chart-en')){
+        const tokenomicChartEn = new Chart(
+          document.getElementById('tokenomic-chart-en').getContext('2d'),// document.getElementById('tokenomic-chart'),
+          configEN
+        );
+      }
+      */
    }

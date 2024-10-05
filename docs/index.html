@@ -10,8 +10,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/buble.css" />
   <link rel="stylesheet" href="topacio-style.css" />
   
+  <script>
+
+    var script = document.createElement("script");
+    script.addEventListener("load", function(event) {
+      console.log("Script terminó de cargarse y ejecutarse");
+      setTimeout(iniChartTokenomic ,1000);
+    });
+    script.src = "main.js";
+    script.async = true;
+    document.getElementsByTagName("script")[0].parentNode.appendChild(script);
+  
+    </script>
 </head>
 <body>
+  <nav>
+    <a href="#/en/">English</a> |
+    <a href="#/es/">Español</a>
+  </nav>
+
   <div id="app"></div>
   <script>
     window.$docsify = {
@@ -21,6 +38,11 @@
       logo: '/_media/1.svg',//
       coverpage: {
         '/': 'coverpage.md'
+      },
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/es/.*/_sidebar.md': '/es/_sidebar.md',
+        '/en/.*/_sidebar.md': '/en/_sidebar.md',
       },
       vueGlobalOptions: {
         data() {
@@ -37,17 +59,5 @@
   <!-- Development -->
   <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
-  <script>
-
-  var script = document.createElement("script");
-  script.addEventListener("load", function(event) {
-    console.log("Script terminó de cargarse y ejecutarse");
-    setTimeout(iniChartTokenomic ,1000);
-  });
-  script.src = "main.js";
-  script.async = true;
-  document.getElementsByTagName("script")[0].parentNode.appendChild(script);
-
-  </script>
 </body>
 </html>
